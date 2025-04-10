@@ -19,7 +19,7 @@ book = st.sidebar.selectbox('📖 Selecione um livro', sorted(books))
 df_book = df_top100_books[df_top100_books['book title'] == book]
 df_reviews_f = df_reviews[df_reviews['book title'] == book]
 
-st.write("Colunas disponíveis nas avaliações:", df_reviews_f.columns.tolist())
+#st.write("Colunas disponíveis nas avaliações:", df_reviews_f.columns.tolist())
 
 if not df_book.empty:
     book_info = df_book.iloc[0]
@@ -28,8 +28,7 @@ if not df_book.empty:
     st.markdown(f"""
     ## {book_info['book title']}
     **Autor:** {book_info['author']}  
-    **Gênero:** {book_info['genre']}  
-    **Ano de Publicação:** {book_info['year of publication']}  
+    **Gênero:** {book_info['genre']}    
     """)
 
     # Métricas
