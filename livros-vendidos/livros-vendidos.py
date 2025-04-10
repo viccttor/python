@@ -54,4 +54,4 @@ with col2:
     col2.plotly_chart(fig2, use_container_width=True)
 
 #df_reviews
-df_books
+df_books_display
